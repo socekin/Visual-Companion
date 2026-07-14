@@ -4,6 +4,12 @@ An [Agent Skill](https://skills.sh) that gives your coding agent a live browser 
 
 Works with Claude Code, Codex, Copilot CLI, and other agents that support the `SKILL.md` format.
 
+## Preview
+
+![Two shadcn/ui-style login page variants rendered as a clickable comparison screen](assets/preview-login-comparison.png)
+
+*Output from a real session: asked to compare two SaaS login page directions, the agent renders both as high-fidelity, clickable options in the browser while the trade-off discussion stays in the conversation.*
+
 ## How it works
 
 1. You invoke the skill during a discussion.
