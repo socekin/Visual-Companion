@@ -31,10 +31,11 @@ npx skills add socekin/Visual-Companion
 ### Manual (Claude Code)
 
 ```bash
-git clone https://github.com/socekin/Visual-Companion.git ~/.claude/skills/visual-companion
+git clone https://github.com/socekin/Visual-Companion.git
+cp -r Visual-Companion/skills/visual-companion ~/.claude/skills/visual-companion
 ```
 
-Other agents: clone the repository into your agent's skills directory (e.g. `.agents/skills/`, `.cursor/skills/`).
+Other agents: copy `skills/visual-companion` into your agent's skills directory (e.g. `.agents/skills/`, `.cursor/skills/`).
 
 ## Requirements
 
@@ -68,14 +69,15 @@ Close the session by telling the agent you're done; generated screens are preser
 ## Repository layout
 
 ```
-SKILL.md          # Skill entry point: the operational loop
-visual-guide.md   # Content and interaction contract for browser screens
-scripts/
-  start-server.sh # Start a session server
-  stop-server.sh  # Stop a session server
-  server.cjs      # Zero-dependency HTTP + WebSocket server
-  frame-template.html
-  helper.js       # Injected browser-side interaction API
+skills/visual-companion/
+  SKILL.md          # Skill entry point: the operational loop
+  visual-guide.md   # Content and interaction contract for browser screens
+  scripts/
+    start-server.sh # Start a session server
+    stop-server.sh  # Stop a session server
+    server.cjs      # Zero-dependency HTTP + WebSocket server
+    frame-template.html
+    helper.js       # Injected browser-side interaction API
 ```
 
 ## Acknowledgments
